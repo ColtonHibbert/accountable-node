@@ -10,5 +10,9 @@ app.use(bodyparser.json());
 app.use(cors());
 
 app.get('/', (req,res) => res.send('this is working'))
+app.get('/hi', (req,res) => res.send('this is working'))
+app.post('/goal', (req, res)=> {
+    
+})
 
 app.listen(process.env.PORT || 3001, () => console.log(`app is running on port ${process.env.PORT} or 3001`))
